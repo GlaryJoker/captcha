@@ -186,8 +186,7 @@ class Captcha{
             $finalSessionString = [];
         }
 
-        $font = './font/c.ttf';
-
+        $font = __DIR__.'/font/c.ttf';
 
         for($i=0;$i<$this->length;$i++){
             $color = imagecolorallocate($this->canvas,rand(0,150),rand(0,150),rand(0,150));

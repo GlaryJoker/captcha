@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'glaryjoker\\captcha\\' => array($baseDir . '/src/Captcha'),
+    'glaryjoker\\captcha\\' => array($baseDir . '/src'),
 );

@@ -16,7 +16,7 @@ class ComposerStaticInitd148637dbcfae901328573ccf76f12f7
     public static $prefixDirsPsr4 = array (
         'glaryjoker\\captcha\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/src/Captcha',
+            0 => __DIR__ . '/../..' . '/src',
         ),
     );
 

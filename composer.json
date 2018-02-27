@@ -14,7 +14,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "glaryjoker\\captcha\\": "src//Captcha"
+            "glaryjoker\\captcha\\": "src/"
         }
     }
 }
