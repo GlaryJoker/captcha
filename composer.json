@@ -1,0 +1,20 @@
+{
+    "name": "glaryjoker/captcha",
+    "type": "library",
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "glaryjoker",
+            "email": "glaryjoker@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "glaryjoker\\captcha\\": "src//Captcha"
+        }
+    }
+}
