@@ -61,7 +61,6 @@ class Captcha{
             'name' => '_captcha',
             'length' => 8,
             'specialStringNumber' => 2,
-            'hasSpecialString' => false,
             'language' => 'chinese',
             'way' => 0
         ];
@@ -163,6 +162,11 @@ class Captcha{
         $sessionString = '';
         $finalSessionString = '';
 
+        if($this->way === 0){
+            $finalSessionString = $finalString;
+        }
+
+
         //输入非倒立的文字 把非倒立的文字存入session
         if($this->way === 1){
             $finalSessionString = $finalString;
@@ -249,12 +253,12 @@ class Captcha{
 
     //存取session
     protected function saveSession($sessionData){
-
         $_SESSION[$this->name] = $sessionData;
 
     }
 
     public function getSession($name = ""){
+
         if($name === ""){
             $name = $this->name;
         }
@@ -312,13 +316,10 @@ class Captcha{
                  $bool = false;
              }
          }
-         if($bool){
-             $this->clearSession($name);
-         }
 
          return $bool;
     }
-
+    //清除session
     protected function clearSession($name){
 
         unset($_SESSION[$name]);
