@@ -4,7 +4,7 @@
     "require": {
         "php": ">=7.0.0"
     },
-    "license": "mit",
+    "license": "MIT",
     "authors": [
         {
             "name": "glaryjoker",
