@@ -56,7 +56,7 @@ class Captcha{
 
     public function __construct(array $args = [])
     {
-
+        session_start();
         $default = [
             'name' => '_captcha',
             'length' => 8,
